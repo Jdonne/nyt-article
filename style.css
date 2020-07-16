@@ -1,0 +1,71 @@
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    align-items: center;
+    width: 100%;
+    margin: 0
+   
+    
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    padding: 10px 0;
+    border-top: 0.5px solid #e2e2e2;;
+    border-bottom: 0.5px solid #e2e2e2;;
+    background-color: white;
+}
+
+.logo {
+    margin-left: 140px;
+}
+
+.nav-end {
+    display:flex;
+}
+
+.mainpic {
+    height: 531px;
+    width:945px;
+}
+figcaption {
+    width:945px;
+    color: rgb(102, 102, 102);
+    
+}
+
+h1{
+    padding-top: 50px;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-style: italic;
+    font-size:40px;
+    max-width: 600px;
+}
+article {
+    width: 600px
+}
+h2 {
+    font-family:nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 15px;
+}
+article a {
+    color:black;
+    text-decoration-color: #ccc;
+}
+
+article p{
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+font-size:20px ;
+}
