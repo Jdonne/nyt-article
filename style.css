@@ -5,7 +5,6 @@ box-sizing: border-box;
 *, *:before, *:after {
 box-sizing: inherit;
 }
-
 body{
     display:flex;
     flex-direction: column;
@@ -14,27 +13,49 @@ body{
     width: 100%;
     margin: 0
    
-    
+    /* nav bar */
 }
 nav {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     position:fixed;
     width:100%;
-    padding: 10px 0;
+    padding: 5px 0 5px;
     border-top: 0.5px solid #e2e2e2;;
     border-bottom: 0.5px solid #e2e2e2;;
     background-color: white;
 }
-
+.nav-start{
+    height:26px;
+}
 .logo {
-    margin-left: 140px;
+    margin-left: 130px;
 }
 
 .nav-end {
     display:flex;
 }
+button{
+    font-family: nyt-franklin, helvetica, arial, sans-serif; 
+}
+.subscribe {
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 3px;
+    padding: 11px 12px 8px 12px
+}
+
+.account{
+    border: 0;
+    background-color: transparent;
+}
+
+/* picture */
 
 .mainpic {
     height: 531px;
@@ -46,6 +67,8 @@ figcaption {
     
 }
 
+/* main article */
+
 h1{
     padding-top: 50px;
     font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
@@ -54,12 +77,43 @@ h1{
     max-width: 600px;
 }
 article {
-    width: 600px
+    width: 600px;
+    display:flex;
+    flex-direction: column;
 }
 h2 {
     font-family:nyt-franklin, helvetica, arial, sans-serif;
     font-size: 15px;
 }
+.info-bar {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.time{ 
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.8125rem;
+}
+.socials{
+   display:flex;
+   justify-content: space-between;
+   width: 110px
+   
+}
+.socials a {
+    padding: 5px;
+    border:1px transparent;
+    background-color: #eee;
+    border-radius: 100%;
+    height:25px;
+}
+a svg {
+    width: 15px;
+    height: 15px;
+}
+
 article a {
     color:black;
     text-decoration-color: #ccc;
@@ -68,4 +122,22 @@ article a {
 article p{
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
 font-size:20px ;
+}
+
+/* footer */
+
+footer a{
+    text-align: center;
+    left: 0;
+    bottom:0;
+    position:fixed;
+    width:100%;
+    height: 55px;
+    padding-top: 20px;   
+    background-color: #333;
+    margin:0;
+    font-family:nyt-franklin, helvetica, arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
